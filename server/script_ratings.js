@@ -18,7 +18,7 @@ client.connect(function(err, client, done) {
       console.log('rating is deleted');
    });
 
-   var query2 = client.query('CREATE TABLE ratings (ratingid int primary key, author varchar(50), authorid int, date varchar(50), placeid int, comment text)', function(err, result) {
+   var query2 = client.query('CREATE TABLE ratings (id int primary key, author varchar(50), authorid int, date varchar(50), placeid int, comment text)', function(err, result) {
     if (err)
       console.log('err ' + err);
     else

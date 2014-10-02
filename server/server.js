@@ -29,8 +29,6 @@ app.use(loopback.urlNotFound());
 // The ultimate error handler.
 app.use(loopback.errorHandler());
 
-var pg = require('pg');
-
 
 app.start = function() {
   // start the web server

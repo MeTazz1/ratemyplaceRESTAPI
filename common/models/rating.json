@@ -1,9 +1,9 @@
 {
-  "name": "Rating",
+  "name": "Ratings",
   "plural": "Ratings",
   "base": "PersistedModel",
   "properties": {
-    "ratingid": {
+    "id": {
       "type": "number",
       "required": true
     },

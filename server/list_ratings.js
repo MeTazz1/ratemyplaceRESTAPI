@@ -16,20 +16,16 @@ client.connect(function(err, client, done) {
     console.log('row -> ' + row.comment);
    });
 
-   query.on('end', function(row) {
-    client.end();
-   });
-
    // var date = new Date();
    //  var rats = [
-   //      { ratingid: 0,
+   //      { id: 0,
    //        author: 'foo@bar.com',
    //        authorid: 1, 
    //        date: date,
    //        placeid: 1,
    //        comment: 'first comment bro'
    //      }, {
-   //        ratingid: 1,
+   //        id: 1,
    //        author: 'foo@bar.com',
    //        authorid: 1, 
    //        date: date,
@@ -40,7 +36,7 @@ client.connect(function(err, client, done) {
    //  var count = rats.length;
    //  rats.forEach(function(rating) {
    //    console.log('parsing ' + rating.ratingid);
-   //    var insertQuery = 'INSERT INTO ratings(ratingid, author, authorid, date, placeid, comment) VALUES(' + rating.ratingid + ', \'' + rating.author + '\',' + rating.authorid + ',\'' + rating.date + '\',' + rating.placeid + ', \'' + rating.comment + '\');';
+   //    var insertQuery = 'INSERT INTO ratings(id, author, authorid, date, placeid, comment) VALUES(' + rating.id + ', \'' + rating.author + '\',' + rating.authorid + ',\'' + rating.date + '\',' + rating.placeid + ', \'' + rating.comment + '\');';
    //    console.log('query is ' + insertQuery);
    //      var qq = client.query(insertQuery, function(err, result) {
    //        if (err)
@@ -48,7 +44,7 @@ client.connect(function(err, client, done) {
    //          console.log('err is ' + err);
    //        }
    //        else
-   //        console.log('ratings ' + rating.ratingid + ' has been added');
+   //        console.log('ratings ' + rating.id + ' has been added');
    //      });
 
    //      qq.on('end', function(result) {
