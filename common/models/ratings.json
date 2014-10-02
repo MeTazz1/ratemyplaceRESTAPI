@@ -1,0 +1,33 @@
+{
+  "name": "Ratings",
+  "plural": "Ratings",
+  "base": "PersistedModel",
+  "properties": {
+    "ratingid": {
+      "type": "number",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "authorid": {
+      "type": "number",
+      "required": true
+    },
+    "date": {
+      "type": "timestamp"
+    },
+    "placeid": {
+      "type": "number"
+    },
+    "comment": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

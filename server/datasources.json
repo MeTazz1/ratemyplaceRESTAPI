@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "RatingsDB": {
+    "name": "RatingsDB",
+    "connector": "postgresql",
+    "host": "ec2-54-243-48-227.compute-1.amazonaws.com",
+    "port": 5432,
+    "database": "d40b08n5m11i4u",
+    "username": "upiqozgkpecvyk",
+    "password": "xswmZJCFGbOgkQ0RhuGKqtKhbR"
   }
 }
