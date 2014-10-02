@@ -3,7 +3,7 @@
   "plural": "Ratings",
   "base": "PersistedModel",
   "properties": {
-    "ratingid": {
+    "id": {
       "type": "number",
       "required": true
     },
@@ -16,10 +16,12 @@
       "required": true
     },
     "date": {
-      "type": "timestamp"
+      "type": "string",
+      "required": true
     },
     "placeid": {
-      "type": "number"
+      "type": "number",
+      "required": true
     },
     "comment": {
       "type": "string",
